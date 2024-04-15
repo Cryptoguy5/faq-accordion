@@ -1,0 +1,143 @@
+body {
+    height: 120vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.main {
+    height: 120%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.align {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.top {
+    width: 100%;
+    min-height: 35%;
+    max-height: auto;
+    background: url(./assets/images/background-pattern-desktop.svg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+}
+
+.bottom {
+    width: 100%;
+    max-height: auto;
+    min-height: 65%;
+    background-color: rgb(196, 158, 231);
+    position: relative;
+    display: inline-block;
+}
+
+.faq {
+    min-height: 65%;
+    max-height: auto;
+    width: 55%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+
+.section {
+    height: 20%;
+    margin: 0 5% 0 5%;
+    position: relative;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+
+img {
+    margin-right: 3%;
+}
+
+.plus {
+    margin-left: 10%;
+    position: absolute;
+    right: 50px;
+}
+
+.plus:hover {
+    filter: brightness(75%);
+}
+
+.plus:focus-visible {
+    filter: brightness(75%);
+    outline: 2px solid black;
+}
+
+.plus:active {
+    filter: brightness(50%);
+}
+
+
+
+.minus {
+    display: none;
+    margin-left: 10%;
+    position: absolute;
+    right: 50px;
+}
+
+
+.minus:hover {
+    filter: brightness(300%);
+}
+
+input.minus:focus-visible {
+    filter: brightness(300%);
+    outline: 2px solid black;
+}
+
+.minus:active {
+    filter: brightness(200%);
+}
+
+p{
+    display: none;
+    font-size: 16px 
+}
+
+@media(max-width: 576px){
+    .faq {
+        width: 95%;
+    
+}
+
+.plus, .minus {
+    position: absolute;
+    right: 5px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
+}
+
+}
