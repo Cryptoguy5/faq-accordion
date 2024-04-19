@@ -1,4 +1,4 @@
-const section = document.querySelectorAll('.section').length;
+const section = document.querySelectorAll('section').length;
 
 for (let i = 0; i < section; i++) {
   let plus = document.querySelectorAll('.plus')[i];
